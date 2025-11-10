@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dein AI Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Dein persönlicher AI-Assistent</h1>
+      <p>Stelle Fragen, erhalte Antworten in Sekunden. 24/7 verfügbar.</p>
+      <button id="open-chat" class="btn-primary">Chat jetzt starten</button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section>
+      <h2>Was dieser Chatbot kann</h2>
+      <ul class="feature-list">
+        <li>Antwortet in Echtzeit auf Kundenfragen</li>
+        <li>Kann an deinen Stil & Branding angepasst werden</li>
+        <li>Läuft komplett in deinem Namen auf deiner Seite</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Chat Widget -->
+  <div id="chat-widget" class="chat-widget hidden">
+    <div class="chat-header">
+      <span>AI Chat</span>
+      <button id="close-chat" aria-label="Chat schließen">&times;</button>
+    </div>
+    <div id="chat-messages" class="chat-messages">
+      <div class="message bot">
+        <div class="bubble">
+          Hey 👋 Ich bin dein AI-Assistent. Was möchtest du wissen?
+        </div>
+      </div>
+    </div>
+    <form id="chat-form" class="chat-input-row">
+      <input
+        id="chat-input"
+        type="text"
+        placeholder="Schreib deine Frage..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="send-btn">Senden</button>
+    </form>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
